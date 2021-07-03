@@ -25,7 +25,7 @@ spec:
           image: nginx      
           ports:
             - name: http
-              containerPort: 0909   
+              containerPort: 9909   
               protocol: TCP          
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
