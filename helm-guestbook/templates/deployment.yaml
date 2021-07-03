@@ -23,6 +23,10 @@ spec:
       containers:
         - name: nginx-container
           image: nginx      
+          ports:
+            - name: http
+              containerPort: 0909   
+              protocol: TCP          
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
