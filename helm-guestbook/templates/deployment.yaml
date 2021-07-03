@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx      
+          image: redis      
           ports:
             - name: http
               containerPort: 9909   
